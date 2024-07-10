@@ -881,6 +881,6 @@ class __TwigTemplate_02ac2e0fe679d3354586bce75f662962 extends Template
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
     }
 }

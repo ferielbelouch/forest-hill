@@ -1442,6 +1442,6 @@ class __TwigTemplate_241692c0aa3b1b4093993ac628d96c90 extends Template
 
     Sfjs.loadToolbar('{{ token }}');
 /*]]>*/</script>
-", "@WebProfiler/Profiler/toolbar_js.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_js.html.twig");
+", "@WebProfiler/Profiler/toolbar_js.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_js.html.twig");
     }
 }

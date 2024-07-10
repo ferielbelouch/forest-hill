@@ -985,6 +985,6 @@ class __TwigTemplate_c96c25a0da9d9e7e97a58c2c89c2b0ea extends Template
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

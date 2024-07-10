@@ -444,6 +444,6 @@ class __TwigTemplate_08f23ffa9ae785736577d64ccb1fe1a7 extends Template
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
     }
 }

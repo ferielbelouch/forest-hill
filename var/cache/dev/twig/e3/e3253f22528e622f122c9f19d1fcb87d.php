@@ -1850,6 +1850,6 @@ class __TwigTemplate_544791fa6e79fd8226595cef9e37c911 extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/vendor/doctrine/doctrine-bundle/templates/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/vendor/doctrine/doctrine-bundle/templates/Collector/db.html.twig");
     }
 }

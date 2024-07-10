@@ -46,31 +46,309 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
-        yield "<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>";
+        yield "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
+<html lang=\"fr\">
+
+<head>
+    <title>";
         // line 5
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
         yield "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
-        ";
-        // line 7
-        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 9
-        yield "
-        ";
-        // line 10
-        yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
+    <meta name=\"description\" content=\"Les 6 clubs Forest Hill vous accueillent toute l&#039;année, à Paris et en Ile de France pour pratiquer zumba, aquabike, RPM, boxe et 60 autres activités de remise en forme\" />  
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" />
+
+    <link rel=\"icon\" type=\"image/png\" href=\"/bundles/chorusfront/img/favicon.png\" />
+     
+
+    <link rel=\"stylesheet\" href=\"";
         // line 13
-        yield "    </head>
-    <body>
-        ";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/cbdcfe9.css"), "html", null, true);
+        yield "\" />
+    <link href=\"https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 15
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/override.css"), "html", null, true);
+        yield "\" />
+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css\">
+    <script>
+    (
+        function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }
+        )
+         
+        (window,document,'script','dataLayer','GTM-P6WR3VQ');
+    </script>
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NS2JMZSK');
+    </script>
+       
+\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=AW-948388217\"></script>
+\t<script>
+  \t\twindow.dataLayer = window.dataLayer || [];
+  \t\tfunction gtag(){dataLayer.push(arguments);}
+  \t\tgtag('js', new Date());
+  \t\tgtag('config', 'AW-948388217');
+\t</script>
+\t\t
+    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.3.1.min.js\" integrity=\"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\" crossorigin=\"anonymous\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 45
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/plugins/jquery/jquery.magnific-popup.js"), "html", null, true);
+        yield "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 46
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/popup-modal.js"), "html", null, true);
+        yield "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 47
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/consts.js"), "html", null, true);
+        yield "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 48
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/core.js"), "html", null, true);
+        yield "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 49
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/panel.js"), "html", null, true);
+        yield "\"></script>
+    <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js\" ></script>
+    
+    <script type=\"text/javascript\" defer=\"defer\" src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 53
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/slider.js"), "html", null, true);
+        yield "\"></script>
+    ";
+        // line 54
+        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
+        // line 56
+        yield "
+    ";
+        // line 57
+        yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
+        // line 60
+        yield "
+    
+</head>
+
+<body class=\"templateHome\">
+<!-- Google Tag Manager (noscript) -->
+
+<div id=\"overbeau\"></div>
+<div id=\"cookies-infos\" style=\"display:none;\">
+    <div class=\"InnerContent\">
+        <p>
+            En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies nous permettant de réaliser des statistiques de visites et de gérer votre connexion. <a href=\"https://www.forest-hill.fr/pages/cookies\" title=\"CGU\">En savoir plus</a>
+            <span class=\"off\"><i class=\"icon-close\"></i></span>
+        </p>
+    </div>
+</div>
+<header>
+    <div class=\"headerTop\">
+        <div class=\"InnerContent\">
+            <ul class=\"log-btn\">
+                <li><a href=\"https://reservation.forest-hill.fr/\" ><i class=\"icon-log-in-plein\"></i>Je réserve</a></li>
+                <li><a href=\"http://www.forest-hill.pro/espacepro.html\" target=\"_blank\"><i class=\"icon-suitcase\"></i>Espace pro</a></li>
+            </ul>
+
+            <ul class=\"blockSocial\">
+                <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+                <li><a href=\"https://twitter.com/clubsforesthill\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>
+                <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=\"header\">
+        <div class=\"InnerContent\">
+            <div id=\"btn-navigation\" class=\"btn-navigation\" >
+                <a href=\"\">
+                    <span class=\"line line-01\"></span>
+                    <span class=\"line line-02\"></span>
+                    <span class=\"line line-03\"></span>
+                </a>
+            </div>
+            <div class=\"logo\">
+                <a href=\"https://www.forest-hill.fr/\" title=\"Forest Hill\">
+                    <i class=\"icon-forest-hill\"></i>
+                </a>
+            </div>
+
+            <div class=\"log-btn--mobile\">
+                <a href=\"https://www.forest-hill.fr/profil/\" ><i class=\"icon-log-in-plein\"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav id=\"nav-mobile\" class=\"main-menu\">
+    <div class=\"InnerContent\">
+        <div class=\"headerMobileNav\">
+            <div class=\"logo--mobile\">
+                <a href=\"https://www.forest-hill.fr/\" title=\"Forest Hill\">
+                    <i class=\"icon-forest-hill\"></i>
+                </a>
+            </div>
+            <div class=\"close-nav\">
+                <i class=\"dripicon-cross\"></i>
+            </div>
+        </div>
+        <ul class=\"log-nav--mobile\">
+            <li>
+                <a href=\"https://www.forest-hill.fr/profil/\" ><i class=\"icon-log-in-plein\"></i> Mon compte</a>
+            </li>
+            <li>
+                <a href=\"http://www.forest-hill.pro/espacepro.html\" target=\"_blank\" ><i class=\"icon-suitcase\"></i> Espace Pro</a>
+            </li>
+        </ul>
+        <ul class=\"primary-nav\">
+            <li >
+                <a href=\"https://www.forest-hill.fr/vos-clubs-a-paris\" title=\"Les Clubs\">Clubs</a>
+            </li>
+            <li >
+                <a href=\"#\">Activités</a>
+                <ul class=\"sub-nav\">
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/cardio\" title=\"Cardio\"><span>Cardio</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/renforcement-musculaire\" title=\"Renforcement musculaire\"><span>Renforcement musculaire</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/team-training\" title=\"Team training\"><span>Team training</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/danse\" title=\"Danse\"><span>Danse</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/sports-de-raquette\" title=\"Sports de raquette\"><span>Sports de raquette</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/aquagym\" title=\"Aquagym\"><span>Aquagym</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/detente-et-bien-etre\" title=\"Détente et bien-être\"><span>Détente et bien-être</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/boxe-grappling\" title=\"Boxe / Grappling\"><span>Boxe / Grappling</span></a>
+                        </li>
+                                    </ul>
+            </li>
+            <li><a href=\"#\">Planning</a>
+                <ul class=\"sub-nav\">
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-aquaboulevard#planning\" title=\"Forest Hill Aquaboulevard\"><span>Forest Hill Aquaboulevard</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-la-defense#planning\" title=\"Forest Hill La Défense\"><span>Forest Hill La Défense</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-timing-paris-sud#planning\" title=\"Forest Hill Timing Paris Sud\"><span>Forest Hill Timing Paris Sud</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-la-marche-marnes-la-coquette#planning\" title=\"Forest Hill La Marche-Marnes-La-Coquette\"><span>Forest Hill La Marche-Marnes-La-Coquette</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-versailles#planning\" title=\"Forest Hill Versailles\"><span>Forest Hill Versailles</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/meudon-bord-de-seine#planning\" title=\"Meudon Bord de Seine\"><span>Meudon Bord de Seine</span></a>
+                        </li>
+                                    </ul>
+            </li>
+            <li ><a href=\"https://www.forest-hill.fr/Formules\" title=\"Nos formules\">Formules</a></li>
+
+            <li ><a href=\"https://www.forest-hill.fr/contact\" title=\"Contact\">Contact</a></li>
+
+            <li><a target=\"_blank\" href=\"https://www.sport-booking.com/1__clubs-forest-hill?groupcode=FORESTHILL\" class=\"login cf\" target=\"_blank\">Je m'abonne</a></li>
+        </ul>
+        <div class=\"action-cta\">
+                            <a href=\"https://www.forest-hill.fr/profitez-dune-seance-decouverte-gratuite\" title=\"Séance découverte gratuite\">Séance découverte gratuite</a>
+                    </div>
+
+        <ul class=\"blockSocial\">
+            <li>Suivez-nous :</li>
+            <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+            <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<main id=\"content\" class=\"main-wrap home\">
+    ";
+        // line 206
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 16
-        yield "    </body>
+        // line 207
+        yield "
+</main>
+<footer class=\"footer\">
+    <div class=\"apps-footer\">
+        <div>
+            <ul>
+                <li>Réservez vos cours sur notre application</li>
+                <li><a href=\"https://itunes.apple.com/fr/app/forest-hill/id1191775516?l=fr&ls=1&mt=8\"><img src=\"";
+        // line 214
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/app-store-footer.png"), "html", null, true);
+        yield "\" alt=\"Application Apple\"></a></li>
+                <li><a href=\"https://play.google.com/store/apps/details?id=fr.foresthill.foresthill\"><img src=\"";
+        // line 215
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/google-play-footer.png"), "html", null, true);
+        yield "\" alt=\"Application Androïd\"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=\"linkFooter\">
+            <div>
+                <div class=\"title-footer\">Nos clubs</div>
+                                <ul>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-aquaboulevard\" title=\"Forest Hill Aquaboulevard\">Forest Hill Aquaboulevard</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-la-defense\" title=\"Forest Hill La Défense\">Forest Hill La Défense</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-timing-paris-sud\" title=\"Forest Hill Timing Paris Sud\">Forest Hill Timing Paris Sud</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-la-marche-marnes-la-coquette\" title=\"Forest Hill La Marche-Marnes-La-Coquette\">Forest Hill La Marche-Marnes-La-Coquette</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-versailles\" title=\"Forest Hill Versailles\">Forest Hill Versailles</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/meudon-bord-de-seine\" title=\"Meudon Bord de Seine\">Meudon Bord de Seine</a></li>
+                                    </ul>
+            </div>
+            <div>
+                <div class=\"title-footer\">L'esprit forest hill</div>
+                <ul>
+                                            <li><a href=\"https://www.sport-booking.com/1__clubs-forest-hill?groupcode=FORESTHILL\"  target=\"_blank\"  title=\"Sport Booking\">Sport Booking</a></li>
+                                            <li><a href=\"http://www.golftennisjardy.com/\"  target=\"_blank\"  title=\"Haras de Jardy - Vaucresson\">Haras de Jardy - Vaucresson</a></li>
+                                            <li><a href=\"https://www.foresthill-hotels.com/\"  target=\"_blank\"  title=\"Hôtel Paris Meudon Velizy\">Hôtel Paris Meudon Velizy</a></li>
+                                            <li><a href=\"https://www.aquaboulevard.fr/\"  target=\"_blank\"  title=\"Le parc Aquaboulevard\">Le parc Aquaboulevard</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/list/evenements\"  title=\"Nos événements\">Nos événements</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/cookies\"  title=\"Cookies\">Cookies</a></li>
+                                    </ul>
+            </div>
+            <div>
+                <div class=\"title-footer\">Contact</div>
+                <ul>
+                                            <li><a href=\"https://www.forest-hill.fr/contact\"  title=\"Nous contacter\">Nous contacter</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/mentions-legales\"  title=\"Mentions légales\">Mentions légales</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/cgu\"  title=\"Conditions générales de ventes et d&#039;utilisations\">CGU</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/rgpd\"  title=\"Politique de protection des donnees personnelles\">Politique de protection des donnees personnelles</a></li>
+                                            <li><a href=\"http://www.forest-hill.pro/espacepro.html\"  target=\"_blank\"  title=\"Espace Pro\">Espace Pro</a></li>
+                                    </ul>
+                <ul class=\"blockSocial\">
+                    <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+                    <li><a href=\"https://twitter.com/clubsforesthill\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>
+                    <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src=\"/bundles/chorusfront/js/includes/menu.js\"></script>
+<script src=\"/bundles/chorusfront/js/includes/nav-mobile.js\"></script>
+</body>
 </html>
 ";
         
@@ -92,7 +370,7 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Welcome!";
+        yield "Clubs Forest Hill : Remise en forme, fitness, Les Mills, zumba, tennis, squash, sauna, hammam et piscines";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -102,7 +380,7 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         return; yield '';
     }
 
-    // line 7
+    // line 54
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -112,8 +390,8 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
-        yield "        ";
+        // line 55
+        yield "    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -123,7 +401,7 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         return; yield '';
     }
 
-    // line 10
+    // line 57
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -133,11 +411,11 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 11
-        yield "            ";
-        yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 12
+        // line 58
         yield "        ";
+        yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
+        // line 59
+        yield "    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -147,7 +425,7 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         return; yield '';
     }
 
-    // line 11
+    // line 58
     public function block_importmap($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -167,7 +445,7 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
         return; yield '';
     }
 
-    // line 15
+    // line 206
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -197,30 +475,286 @@ class __TwigTemplate_46bed69a2c7480f83d67aacb70859e81 extends Template
     /**
      * @codeCoverageIgnore
      */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
     public function getDebugInfo()
     {
-        return array (  171 => 15,  151 => 11,  140 => 12,  137 => 11,  127 => 10,  116 => 8,  106 => 7,  86 => 5,  73 => 16,  71 => 15,  67 => 13,  65 => 10,  62 => 9,  60 => 7,  55 => 5,  49 => 1,);
+        return array (  449 => 206,  429 => 58,  418 => 59,  415 => 58,  405 => 57,  394 => 55,  384 => 54,  364 => 5,  301 => 215,  297 => 214,  288 => 207,  286 => 206,  138 => 60,  136 => 57,  133 => 56,  131 => 54,  127 => 53,  120 => 49,  116 => 48,  112 => 47,  108 => 46,  104 => 45,  71 => 15,  66 => 13,  55 => 5,  49 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
-        {% block stylesheets %}
-        {% endblock %}
+        return new Source("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
+<html lang=\"fr\">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+    <title>{% block title %}Clubs Forest Hill : Remise en forme, fitness, Les Mills, zumba, tennis, squash, sauna, hammam et piscines{% endblock %}</title>
+    <meta name=\"description\" content=\"Les 6 clubs Forest Hill vous accueillent toute l&#039;année, à Paris et en Ile de France pour pratiquer zumba, aquabike, RPM, boxe et 60 autres activités de remise en forme\" />  
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" />
+
+    <link rel=\"icon\" type=\"image/png\" href=\"/bundles/chorusfront/img/favicon.png\" />
+     
+
+    <link rel=\"stylesheet\" href=\"{{asset('css/cbdcfe9.css')}}\" />
+    <link href=\"https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('css/override.css')}}\" />
+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css\">
+    <script>
+    (
+        function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }
+        )
+         
+        (window,document,'script','dataLayer','GTM-P6WR3VQ');
+    </script>
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NS2JMZSK');
+    </script>
+       
+\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=AW-948388217\"></script>
+\t<script>
+  \t\twindow.dataLayer = window.dataLayer || [];
+  \t\tfunction gtag(){dataLayer.push(arguments);}
+  \t\tgtag('js', new Date());
+  \t\tgtag('config', 'AW-948388217');
+\t</script>
+\t\t
+    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.3.1.min.js\" integrity=\"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\" crossorigin=\"anonymous\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/plugins/jquery/jquery.magnific-popup.js')}}\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/includes/popup-modal.js')}}\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/includes/consts.js')}}\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/includes/core.js')}}\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/includes/panel.js')}}\"></script>
+    <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js\" ></script>
+    
+    <script type=\"text/javascript\" defer=\"defer\" src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js\"></script>
+    <script type=\"text/javascript\" src=\"{{asset('js/includes/slider.js')}}\"></script>
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+
+    
+</head>
+
+<body class=\"templateHome\">
+<!-- Google Tag Manager (noscript) -->
+
+<div id=\"overbeau\"></div>
+<div id=\"cookies-infos\" style=\"display:none;\">
+    <div class=\"InnerContent\">
+        <p>
+            En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies nous permettant de réaliser des statistiques de visites et de gérer votre connexion. <a href=\"https://www.forest-hill.fr/pages/cookies\" title=\"CGU\">En savoir plus</a>
+            <span class=\"off\"><i class=\"icon-close\"></i></span>
+        </p>
+    </div>
+</div>
+<header>
+    <div class=\"headerTop\">
+        <div class=\"InnerContent\">
+            <ul class=\"log-btn\">
+                <li><a href=\"https://reservation.forest-hill.fr/\" ><i class=\"icon-log-in-plein\"></i>Je réserve</a></li>
+                <li><a href=\"http://www.forest-hill.pro/espacepro.html\" target=\"_blank\"><i class=\"icon-suitcase\"></i>Espace pro</a></li>
+            </ul>
+
+            <ul class=\"blockSocial\">
+                <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+                <li><a href=\"https://twitter.com/clubsforesthill\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>
+                <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=\"header\">
+        <div class=\"InnerContent\">
+            <div id=\"btn-navigation\" class=\"btn-navigation\" >
+                <a href=\"\">
+                    <span class=\"line line-01\"></span>
+                    <span class=\"line line-02\"></span>
+                    <span class=\"line line-03\"></span>
+                </a>
+            </div>
+            <div class=\"logo\">
+                <a href=\"https://www.forest-hill.fr/\" title=\"Forest Hill\">
+                    <i class=\"icon-forest-hill\"></i>
+                </a>
+            </div>
+
+            <div class=\"log-btn--mobile\">
+                <a href=\"https://www.forest-hill.fr/profil/\" ><i class=\"icon-log-in-plein\"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav id=\"nav-mobile\" class=\"main-menu\">
+    <div class=\"InnerContent\">
+        <div class=\"headerMobileNav\">
+            <div class=\"logo--mobile\">
+                <a href=\"https://www.forest-hill.fr/\" title=\"Forest Hill\">
+                    <i class=\"icon-forest-hill\"></i>
+                </a>
+            </div>
+            <div class=\"close-nav\">
+                <i class=\"dripicon-cross\"></i>
+            </div>
+        </div>
+        <ul class=\"log-nav--mobile\">
+            <li>
+                <a href=\"https://www.forest-hill.fr/profil/\" ><i class=\"icon-log-in-plein\"></i> Mon compte</a>
+            </li>
+            <li>
+                <a href=\"http://www.forest-hill.pro/espacepro.html\" target=\"_blank\" ><i class=\"icon-suitcase\"></i> Espace Pro</a>
+            </li>
+        </ul>
+        <ul class=\"primary-nav\">
+            <li >
+                <a href=\"https://www.forest-hill.fr/vos-clubs-a-paris\" title=\"Les Clubs\">Clubs</a>
+            </li>
+            <li >
+                <a href=\"#\">Activités</a>
+                <ul class=\"sub-nav\">
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/cardio\" title=\"Cardio\"><span>Cardio</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/renforcement-musculaire\" title=\"Renforcement musculaire\"><span>Renforcement musculaire</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/team-training\" title=\"Team training\"><span>Team training</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/danse\" title=\"Danse\"><span>Danse</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/sports-de-raquette\" title=\"Sports de raquette\"><span>Sports de raquette</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/aquagym\" title=\"Aquagym\"><span>Aquagym</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/detente-et-bien-etre\" title=\"Détente et bien-être\"><span>Détente et bien-être</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/activites/boxe-grappling\" title=\"Boxe / Grappling\"><span>Boxe / Grappling</span></a>
+                        </li>
+                                    </ul>
+            </li>
+            <li><a href=\"#\">Planning</a>
+                <ul class=\"sub-nav\">
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-aquaboulevard#planning\" title=\"Forest Hill Aquaboulevard\"><span>Forest Hill Aquaboulevard</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-la-defense#planning\" title=\"Forest Hill La Défense\"><span>Forest Hill La Défense</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-timing-paris-sud#planning\" title=\"Forest Hill Timing Paris Sud\"><span>Forest Hill Timing Paris Sud</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-la-marche-marnes-la-coquette#planning\" title=\"Forest Hill La Marche-Marnes-La-Coquette\"><span>Forest Hill La Marche-Marnes-La-Coquette</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/forest-hill-versailles#planning\" title=\"Forest Hill Versailles\"><span>Forest Hill Versailles</span></a>
+                        </li>
+                                            <li>
+                            <a href=\"https://www.forest-hill.fr/club/meudon-bord-de-seine#planning\" title=\"Meudon Bord de Seine\"><span>Meudon Bord de Seine</span></a>
+                        </li>
+                                    </ul>
+            </li>
+            <li ><a href=\"https://www.forest-hill.fr/Formules\" title=\"Nos formules\">Formules</a></li>
+
+            <li ><a href=\"https://www.forest-hill.fr/contact\" title=\"Contact\">Contact</a></li>
+
+            <li><a target=\"_blank\" href=\"https://www.sport-booking.com/1__clubs-forest-hill?groupcode=FORESTHILL\" class=\"login cf\" target=\"_blank\">Je m'abonne</a></li>
+        </ul>
+        <div class=\"action-cta\">
+                            <a href=\"https://www.forest-hill.fr/profitez-dune-seance-decouverte-gratuite\" title=\"Séance découverte gratuite\">Séance découverte gratuite</a>
+                    </div>
+
+        <ul class=\"blockSocial\">
+            <li>Suivez-nous :</li>
+            <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+            <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<main id=\"content\" class=\"main-wrap home\">
+    {% block body %}{% endblock %}
+
+</main>
+<footer class=\"footer\">
+    <div class=\"apps-footer\">
+        <div>
+            <ul>
+                <li>Réservez vos cours sur notre application</li>
+                <li><a href=\"https://itunes.apple.com/fr/app/forest-hill/id1191775516?l=fr&ls=1&mt=8\"><img src=\"{{asset('images/app-store-footer.png')}}\" alt=\"Application Apple\"></a></li>
+                <li><a href=\"https://play.google.com/store/apps/details?id=fr.foresthill.foresthill\"><img src=\"{{asset('images/google-play-footer.png')}}\" alt=\"Application Androïd\"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=\"linkFooter\">
+            <div>
+                <div class=\"title-footer\">Nos clubs</div>
+                                <ul>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-aquaboulevard\" title=\"Forest Hill Aquaboulevard\">Forest Hill Aquaboulevard</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-la-defense\" title=\"Forest Hill La Défense\">Forest Hill La Défense</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-timing-paris-sud\" title=\"Forest Hill Timing Paris Sud\">Forest Hill Timing Paris Sud</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-la-marche-marnes-la-coquette\" title=\"Forest Hill La Marche-Marnes-La-Coquette\">Forest Hill La Marche-Marnes-La-Coquette</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/forest-hill-versailles\" title=\"Forest Hill Versailles\">Forest Hill Versailles</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/club/meudon-bord-de-seine\" title=\"Meudon Bord de Seine\">Meudon Bord de Seine</a></li>
+                                    </ul>
+            </div>
+            <div>
+                <div class=\"title-footer\">L'esprit forest hill</div>
+                <ul>
+                                            <li><a href=\"https://www.sport-booking.com/1__clubs-forest-hill?groupcode=FORESTHILL\"  target=\"_blank\"  title=\"Sport Booking\">Sport Booking</a></li>
+                                            <li><a href=\"http://www.golftennisjardy.com/\"  target=\"_blank\"  title=\"Haras de Jardy - Vaucresson\">Haras de Jardy - Vaucresson</a></li>
+                                            <li><a href=\"https://www.foresthill-hotels.com/\"  target=\"_blank\"  title=\"Hôtel Paris Meudon Velizy\">Hôtel Paris Meudon Velizy</a></li>
+                                            <li><a href=\"https://www.aquaboulevard.fr/\"  target=\"_blank\"  title=\"Le parc Aquaboulevard\">Le parc Aquaboulevard</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/list/evenements\"  title=\"Nos événements\">Nos événements</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/cookies\"  title=\"Cookies\">Cookies</a></li>
+                                    </ul>
+            </div>
+            <div>
+                <div class=\"title-footer\">Contact</div>
+                <ul>
+                                            <li><a href=\"https://www.forest-hill.fr/contact\"  title=\"Nous contacter\">Nous contacter</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/mentions-legales\"  title=\"Mentions légales\">Mentions légales</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/cgu\"  title=\"Conditions générales de ventes et d&#039;utilisations\">CGU</a></li>
+                                            <li><a href=\"https://www.forest-hill.fr/pages/rgpd\"  title=\"Politique de protection des donnees personnelles\">Politique de protection des donnees personnelles</a></li>
+                                            <li><a href=\"http://www.forest-hill.pro/espacepro.html\"  target=\"_blank\"  title=\"Espace Pro\">Espace Pro</a></li>
+                                    </ul>
+                <ul class=\"blockSocial\">
+                    <li><a href=\"https://www.facebook.com/ForestHill.fb/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>
+                    <li><a href=\"https://twitter.com/clubsforesthill\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>
+                    <li><a href=\"https://www.instagram.com/clubsforesthill/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src=\"/bundles/chorusfront/js/includes/menu.js\"></script>
+<script src=\"/bundles/chorusfront/js/includes/nav-mobile.js\"></script>
+</body>
 </html>
-", "base.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/forest-hill/templates/base.html.twig");
+", "base.html.twig", "/Users/hantour/Documents/FERIEL/forest-hill/templates/base.html.twig");
     }
 }
