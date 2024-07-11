@@ -7,8 +7,11 @@
     color: #f53a33
 }
 
+body.templateHome{
+    background-color: #fff!important;
+}
 a:focus, button:focus, input:focus {
-    outline: 2px solid #00cc11;
+    outline: 5px solid #00cc11;
     outline-offset: 2px;
 }
 
@@ -843,9 +846,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,p,blockquote,pre,a,abbr,acronym,add
 }
 
 a {
-    color: #000;
-    outline: medium none;
-    text-decoration: none
+    color: #000!important;
+    outline: medium none!important;
+    text-decoration: none!important;
 }
 
 *,*:hover {
@@ -7377,7 +7380,7 @@ header:after {
 }
 
 .main-menu .InnerContent {
-    padding-left: 242px;
+    padding-left: 200px;
     padding-right: 283px
 }
 
@@ -7969,6 +7972,20 @@ footer .apps-footer a {
     text-align: center;
     font-weight: 700;
     margin-bottom: 10px
+}
+.home .highlight h2, 
+.home .selectClubs h2,
+.home .listActivities h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    color: #2c3e50; /* Un bleu foncé */
+    text-align: center;
+    background: linear-gradient(to right, #080908, #18a396); /* Dégradé de bleu à violet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .home .highlight .descriptionHighlight {

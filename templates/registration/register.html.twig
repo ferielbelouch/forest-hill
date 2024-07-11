@@ -1,0 +1,120 @@
+{% extends 'base1.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    {# <h1>Register</h1>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+        
+
+        <button type="submit" class="btn">Register</button>
+    {{ form_end(registrationForm) }} #}
+
+    <div class="auth-main v1">
+    <div class="auth-wrapper">
+        <div class="auth-form">
+            <div class="card my-5">
+                <div class="card-body">
+                    <div class="text-center">
+                        {# <img src="{{ asset('images/authentication/img-auth-login.png') }}" alt="images" class="img-fluid mb-3" /> #}
+                        <h4 class="f-w-500 mb-1">Inscription</h4>
+                        {# <p class="mb-3">Vous êtes déjà inscrit ? <a href="{{path('app_login')}}" class="link-primary ms-1">Connectez-vous !</a></p> #}
+                    </div>
+                    {{ form_errors(registrationForm) }}
+
+                    {{ form_start(registrationForm) }}
+                    <div class="mb-5"> 
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Votre profil
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                                {{ form_row(registrationForm.profile) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5"> 
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Prénom
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                                {{ form_row(registrationForm.firstname) }}
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mb-5"> 
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Nom
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                                {{ form_row(registrationForm.lastname) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5"> 
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Date de naissance
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                               {{ form_row(registrationForm.birth) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5"> 
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Email
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                               {{ form_row(registrationForm.email) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                               Mot de passe
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                               {{ form_row(registrationForm.plainPassword) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5 form-check">
+                        <div class="row mb-0">
+                            <div class="col-md-3 col-sm-12">
+                              {{ form_row(registrationForm.agreeTerms) }}
+                            </div>
+                            <label class="form-check-label col-md-9 col-sm-12 text-muted">
+                                J'accepte les conditions générale
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <div class="row mb-0">
+                            <label class="col-form-label col-md-3 col-sm-12 text-md-end">
+                                Captcha
+                            </label>
+                            <div class="col-md-9 col-sm-12">
+                               {{ form_row(registrationForm.captcha) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid mt-4 mb-5">
+                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                    {{ form_end(registrationForm) }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

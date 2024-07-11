@@ -1,0 +1,11 @@
+# translations/easy_admin.fr.yaml
+easy_admin:
+    entity:
+        User:
+            label: 'Utilisateur'
+            label_plural: 'Liste des utilisateurs'
+    action:
+        new: 'Créer un utilisateur'
+        edit: 'Modifier'
+        show: 'Voir'
+        delete: 'Supprimer'
