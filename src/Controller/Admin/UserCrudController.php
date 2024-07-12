@@ -14,6 +14,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 
 class UserCrudController extends AbstractCrudController
 {
@@ -40,6 +41,7 @@ class UserCrudController extends AbstractCrudController
                     'Membre Pacha' => 'pacha', 
                     'Carte Fréquence' => 'frequence',
                     'Non Membre' => 'non_membre',
+                    'Compte pro' => 'pro',
                 ]),
             TextField::new('firstname', 'Prénom'),
             TextField::new('lastname', 'Nom'),
@@ -48,10 +50,14 @@ class UserCrudController extends AbstractCrudController
             TextField::new('password', 'Mot de passe')
                 ->onlyOnForms()
                 ->setFormType(PasswordType::class),
+            AssociationField::new('pro')->setFormTypeOptions([
+                'by_reference' => false, // Important pour les relations OneToMany
+            ]),
             ChoiceField::new('roles', 'roles') 
             ->setChoices([
-                'ROLE_USER' => 'ROLE_USER',
-                'ROLE_ADMIN' => 'ROLE_ADMIN',
+                'Membre' => 'ROLE_USER',
+                'Compte pro' => 'ROLE_PRO',
+                'Administrateur' => 'ROLE_ADMIN',
             ])
             ->setFormTypeOption('expanded', true)
             ->setFormTypeOption('multiple', true),

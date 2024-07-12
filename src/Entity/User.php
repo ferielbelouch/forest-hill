@@ -14,6 +14,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
+    
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -45,6 +47,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(length: 255)]
     private ?string $profile = null;
+
+    #[ORM\ManyToOne(inversedBy: 'user')]
+    private ?Pro $pro = null;
 
     public function getId(): ?int
     {
@@ -167,5 +172,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->profile = $profile;
 
         return $this;
+    }
+
+    public function getPro(): ?Pro
+    {
+        return $this->pro;
+    }
+
+    public function setPro(?Pro $pro): static
+    {
+        $this->pro = $pro;
+
+        return $this;
+    }
+    public function __toString(): string
+    {
+        // Retourne une propriété descriptive de l'utilisateur, comme le nom ou l'email
+        return $this->firstname; // ou $this->email ou toute autre propriété pertinente
     }
 }

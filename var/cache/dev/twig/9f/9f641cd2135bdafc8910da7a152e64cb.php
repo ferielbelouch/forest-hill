@@ -128,22 +128,31 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         // line 55
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/includes/slider.js"), "html", null, true);
         yield "\"></script>
+
+
     ";
-        // line 56
-        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
         // line 58
+        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
+        // line 60
         yield "
     ";
-        // line 59
+        // line 61
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 62
-        yield "
+        // line 64
+        yield "    <scrip src=\"";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/script.js"), "html", null, true);
+        yield "\"></script>
     
 </head>
 
 <body class=\"templateHome\">
 <!-- Google Tag Manager (noscript) -->
-
+<style>
+    a:focus, button:focus, input:focus {
+        outline: 5px solid #00cc11!important;
+        outline-offset: 2px!important;
+    }
+</style>
 <div id=\"overbeau\"></div>
 <div id=\"cookies-infos\" style=\"display:none;\">
     <div class=\"InnerContent\">
@@ -284,10 +293,10 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
 </nav>
 <main id=\"content\" class=\"main-wrap home\">
     ";
-        // line 208
+        // line 215
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 209
-        yield "
+        // line 216
+        yield "    
 </main>
 <footer class=\"footer\">
     <div class=\"apps-footer\">
@@ -295,11 +304,11 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
             <ul>
                 <li>Réservez vos cours sur notre application</li>
                 <li><a href=\"https://itunes.apple.com/fr/app/forest-hill/id1191775516?l=fr&ls=1&mt=8\"><img src=\"";
-        // line 216
+        // line 223
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/app-store-footer.png"), "html", null, true);
         yield "\" alt=\"Application Apple\"></a></li>
                 <li><a href=\"https://play.google.com/store/apps/details?id=fr.foresthill.foresthill\"><img src=\"";
-        // line 217
+        // line 224
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/google-play-footer.png"), "html", null, true);
         yield "\" alt=\"Application Androïd\"></a></li>
             </ul>
@@ -384,7 +393,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         return; yield '';
     }
 
-    // line 56
+    // line 58
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -394,7 +403,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 57
+        // line 59
         yield "    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -405,7 +414,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         return; yield '';
     }
 
-    // line 59
+    // line 61
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -415,10 +424,10 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 60
+        // line 62
         yield "        ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 61
+        // line 63
         yield "    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -429,7 +438,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         return; yield '';
     }
 
-    // line 60
+    // line 62
     public function block_importmap($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -449,7 +458,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
         return; yield '';
     }
 
-    // line 208
+    // line 215
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -489,7 +498,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
      */
     public function getDebugInfo()
     {
-        return array (  453 => 208,  433 => 60,  422 => 61,  419 => 60,  409 => 59,  398 => 57,  388 => 56,  368 => 5,  303 => 217,  299 => 216,  290 => 209,  288 => 208,  140 => 62,  138 => 59,  135 => 58,  133 => 56,  129 => 55,  122 => 51,  118 => 50,  114 => 49,  110 => 48,  106 => 47,  71 => 15,  66 => 13,  55 => 5,  49 => 1,);
+        return array (  462 => 215,  442 => 62,  431 => 63,  428 => 62,  418 => 61,  407 => 59,  397 => 58,  377 => 5,  312 => 224,  308 => 223,  299 => 216,  297 => 215,  142 => 64,  140 => 61,  137 => 60,  135 => 58,  129 => 55,  122 => 51,  118 => 50,  114 => 49,  110 => 48,  106 => 47,  71 => 15,  66 => 13,  55 => 5,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -549,19 +558,26 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
     
     <script type=\"text/javascript\" defer=\"defer\" src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js\"></script>
     <script type=\"text/javascript\" src=\"{{asset('js/includes/slider.js')}}\"></script>
+
+
     {% block stylesheets %}
     {% endblock %}
 
     {% block javascripts %}
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
-
+    <scrip src=\"{{asset('js/script.js')}}\"></script>
     
 </head>
 
 <body class=\"templateHome\">
 <!-- Google Tag Manager (noscript) -->
-
+<style>
+    a:focus, button:focus, input:focus {
+        outline: 5px solid #00cc11!important;
+        outline-offset: 2px!important;
+    }
+</style>
 <div id=\"overbeau\"></div>
 <div id=\"cookies-infos\" style=\"display:none;\">
     <div class=\"InnerContent\">
@@ -702,7 +718,7 @@ class __TwigTemplate_ee1671be0d67f8748273e24d1ee00d0c extends Template
 </nav>
 <main id=\"content\" class=\"main-wrap home\">
     {% block body %}{% endblock %}
-
+    
 </main>
 <footer class=\"footer\">
     <div class=\"apps-footer\">

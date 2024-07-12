@@ -31004,3 +31004,26 @@ div.dataTables_wrapper div.dt-row {
 .auth-main ul li{
   color: red!important;
 }
+
+.auth-main .d-grid {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.content {
+  padding: 20px;
+  height: calc(100% - 100px); /* Ajustez selon votre mise en page */
+  overflow-y: auto; /* Permet le défilement du contenu principal si nécessaire */
+}
+
+span.error{
+    color: #f53a33!important;
+}
+
+span.span{
+  font-size: 12px;
+}
+
+main{
+  background-color: #fff;
+}

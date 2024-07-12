@@ -53,19 +53,26 @@
     
     <script type="text/javascript" defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
     <script type="text/javascript" src="{{asset('js/includes/slider.js')}}"></script>
+
+
     {% block stylesheets %}
     {% endblock %}
 
     {% block javascripts %}
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
-
+    <scrip src="{{asset('js/script.js')}}"></script>
     
 </head>
 
 <body class="templateHome">
 <!-- Google Tag Manager (noscript) -->
-
+<style>
+    a:focus, button:focus, input:focus {
+        outline: 5px solid #00cc11!important;
+        outline-offset: 2px!important;
+    }
+</style>
 <div id="overbeau"></div>
 <div id="cookies-infos" style="display:none;">
     <div class="InnerContent">
@@ -206,7 +213,7 @@
 </nav>
 <main id="content" class="main-wrap home">
     {% block body %}{% endblock %}
-
+    
 </main>
 <footer class="footer">
     <div class="apps-footer">

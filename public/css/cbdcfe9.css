@@ -10,10 +10,7 @@
 body.templateHome{
     background-color: #fff!important;
 }
-a:focus, button:focus, input:focus {
-    outline: 5px solid #00cc11;
-    outline-offset: 2px;
-}
+
 
 [class^="icon-"].round,[class*=" icon-"].round,[class^="dripicon-"].round,[class*=" dripicon-"].round {
     font-size: 13px
