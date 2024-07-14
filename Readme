@@ -54,4 +54,13 @@ symfony server:start
 - Page d'administration : http://localhost:8000/admin
 
 
-** A noter que tous les détails du projet sont sur le livrable. **
+## Accéder à l'interface Admin 
+
+- Pour accéder à l'interface admin, vous devez vous connecter avec le compte admin : 
+
+**' Email : admin@gmail.com '**
+**' MDP : azerty '**
+
+Pour tous les utilisateurs créés, c'est le même mot de passe : azerty. (Juste pour la démo et les tests)
+
+**A noter que tous les détails du projet, sur ce qui a été fait et la stratégie sont sur le livrable.**
