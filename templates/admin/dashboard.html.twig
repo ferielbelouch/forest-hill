@@ -4,35 +4,42 @@
 
 {% block main %}
     <div class="row">
-            <div class="col-md-4 col-sm-6 p-5">
+            <div class="col-md-3 col-sm-6 p-3">
                 <div class="card statistics-card-1 overflow-hidden ">
                 <div class="card-body">
-                    <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                    <h5 class="mb-4">Nombre de membres</h5>
+                    <h5 class="mb-4">Compte utilisateur</h5>
                     <div class="d-flex align-items-center mt-3">
-                    <h3 class="f-w-300 d-flex align-items-center m-b-0">24 membres</h3>
+                    <h3 class="f-w-300 d-flex align-items-center m-b-0">{{numTotalUsers}} comptes</h3>
                     </div>
                 </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 p-5">
+            <div class="col-md-3 col-sm-6 p-3">
                 <div class="card statistics-card-1 overflow-hidden ">
                     <div class="card-body">
-                        <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                        <h5 class="mb-4">Nombre d'entreprises </h5>
+                        <h5 class="mb-4">Compte membres pacha </h5>
                         <div class="d-flex align-items-center mt-3">
-                            <h3 class="f-w-300 d-flex align-items-center m-b-0">24 entreprises</h3>
+                            <h3 class="f-w-300 d-flex align-items-center m-b-0">{{numuserpacha}} membres</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 p-5">
+            <div class="col-md-3 col-sm-6 p-3">
                 <div class="card statistics-card-1 overflow-hidden ">
                     <div class="card-body">
-                        <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                        <h5 class="mb-4">Nombre d'abonnements pris</h5>
+                        <h5 class="mb-4">Comptes membre Fréquence </h5>
                         <div class="d-flex align-items-center mt-3">
-                            <h3 class="f-w-300 d-flex align-items-center m-b-0">500</h3>
+                            <h3 class="f-w-300 d-flex align-items-center m-b-0">{{numuserfreq}} membres</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-3">
+                <div class="card statistics-card-1 overflow-hidden ">
+                    <div class="card-body">
+                        <h5 class="mb-4">Compte non membre</h5>
+                        <div class="d-flex align-items-center mt-3">
+                            <h3 class="f-w-300 d-flex align-items-center m-b-0">{{numusernon}}</h3>
                         </div>
                     </div>
                 </div>
@@ -42,8 +49,7 @@
                         <div class="card-header d-flex align-items-center justify-content-between py-3">
                             <h5>Nouveaux comptes</h5>
                             <div class="dropdown">
-                                <a class="avtar avtar-xs btn-link-secondary dropdown-toggle arrow-none"
-                                    href="#">
+                                <a class="avtar avtar-xs btn-link-secondary"href="{{ url }}">
                                    Voir plus
                                 </a>
                             </div>
@@ -52,60 +58,74 @@
                             <div class="table-responsive">
                                 <table class="table table-hover table-borderless table-sm mb-0">
                                     <tbody>
-                                    
+                                     <tr>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">Prénom</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">Nom</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">Email</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">  Date de naissance</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% for user in FourLastestUser %}
                                         <tr>
                                             <td>
                                                 <div class="d-inline-block align-middle">
                                                     <div class="d-inline-block p-3">
-                                                        <h6 class="m-b-0">email</h6>
+                                                        <h6 class="m-b-0">{{ user.firstname }}</h6>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <p class="mb-0"><i class="ph-duotone ph-circle text-warning f-12"></i> 12/12/12</p>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">{{ user.lastname }}</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">{{ user.email }}</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block p-3">
+                                                        <h6 class="m-b-0">  {{ user.birth ? user.birth|date('Y-m-d') : '' }}</h6>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
-                                    
-                                    
+                                    {% endfor %}
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card statistics-card-1 overflow-hidden ">
-                <div class="card-body">
-                    <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                    <h5 class="mb-4">Nombre Total de Tickets Vendus</h5>
-                    <div class="d-flex align-items-center mt-3">
-                    <h3 class="f-w-300 d-flex align-items-center m-b-0">24 tickets</h3>
-                    <span class="badge bg-light-success ms-2">2%</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card statistics-card-1 overflow-hidden ">
-                    <div class="card-body">
-                        <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                        <h5 class="mb-4">Revenus Totaux</h5>
-                        <div class="d-flex align-items-center mt-3">
-                            <h3 class="f-w-300 d-flex align-items-center m-b-0">2490 €</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card statistics-card-1 overflow-hidden ">
-                    <div class="card-body">
-                        <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" >
-                        <h5 class="mb-4">Nombre de tickets invendus</h5>
-                        <div class="d-flex align-items-center mt-3">
-                            <h3 class="f-w-300 d-flex align-items-center m-b-0">500</h3>
-                            <span class="badge bg-light-success ms-2">98%</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

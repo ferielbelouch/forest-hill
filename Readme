@@ -1,0 +1,57 @@
+# Projet Symfony
+
+Bienvenue dans le projet Symfony. Ce document vous guidera à travers les étapes nécessaires pour installer et faire fonctionner le projet sur votre machine locale.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les outils suivants :
+
+- PHP (>=7.4)
+- Composer
+- Symfony CLI
+- MySQL
+- phpMyAdmin
+
+## Installation
+
+1. **Projet Symfony dans le dossier "FOREST-HILL" :**
+
+Accédez au fichier via un IDE comme visuel studio code.
+
+2. **Installez les dépendances du projet :**
+composer install
+**
+
+3. **Configurez les variables d'environnement :**
+
+DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name"
+
+- Remplacer "db_user" par le nom d'utilisateur mysql
+- Remplacer "db_password" par le mot de passe mysql
+- Remplacer "3306" si mysql utilise un port différent 
+- Remplacer "db_name" par le nom de la base de données que vous allez créer dans phpmyadmin
+
+## Configuration de la base de données
+
+1. Créez la base de données 
+2. Importez le fichier SQL 
+3. Mettez à jour le schéma de la base de données 
+
+Lancez dans le terminal : 
+php bin/console doctrine:schema:update --force
+
+
+## Lancement du serveur 
+
+1. Démarrer le serveur Symfony :
+
+symfony server:start
+
+2. Accédez aux pages suivantes dans votre navigateur :
+
+- Page d'accueil : http://localhost:8000/
+- Page d'inscription : http://localhost:8000/register
+- Page d'administration : http://localhost:8000/admin
+
+
+** A noter que tous les détails du projet sont sur le livrable. **

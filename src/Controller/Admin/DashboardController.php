@@ -12,20 +12,44 @@ use App\Entity\User;
 use App\Entity\Pro;
 use App\Repository\UserRepository;
 
+use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
+
 class DashboardController extends AbstractDashboardController
 {
     private $userRepository;
+    private $adminUrlGenerator;
 
-    public function __construct(UserRepository $userRepository)
+
+    public function __construct(AdminUrlGenerator $adminUrlGenerator, UserRepository $userRepository)
     {
         $this->userRepository = $userRepository;
+
+        $this->adminUrlGenerator = $adminUrlGenerator;
     }
 
 
     #[Route('/admin', name: 'admin')]
     public function index(): Response
     {
-        return $this->render('admin/dashboard.html.twig');
+        $FourLastestUser = $this->userRepository->findFourLastestUser();
+        $numTotalUsers = $this->userRepository->countTotalUsers();
+        $numuserpacha = $this->userRepository->countByStatus('pacha');
+        $numuserfreq = $this->userRepository->countByStatus('frequence');
+        $numusernon = $this->userRepository->countByStatus('non_membre');
+
+        $url = $this->adminUrlGenerator
+            ->setController(UserCrudController::class)
+            ->setAction('index')
+            ->generateUrl();
+
+        return $this->render('admin/dashboard.html.twig', [
+            'FourLastestUser' => $FourLastestUser,
+            'numTotalUsers' => $numTotalUsers,
+            'numuserpacha' => $numuserpacha,
+            'numuserfreq' => $numuserfreq,
+            'numusernon' => $numusernon, 
+            'url' => $url,
+        ]);
     }
 
     public function configureDashboard(): Dashboard
